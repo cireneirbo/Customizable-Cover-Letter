@@ -8,8 +8,8 @@ export class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            company: 'Name of Company',
-            job: 'Title of Position'
+            company: 'Your Company',
+            job: 'Software'
         };
 
         this.updateCoverLetterCompany = this.updateCoverLetterCompany.bind(this);
@@ -32,22 +32,22 @@ export class Home extends Component {
               <form onSubmit={this.submitCoverLetter}>
                 <div>
                   <label>
-                          Type name of company:
-                    <input type="text" placeholder="Name of Company" value={this.state.company} onChange={this.updateCoverLetterCompany} />
+                          <input type="text" placeholder="Name of Company" value={this.state.company} onChange={this.updateCoverLetterCompany} />
+                          -Type the name of your company to update the cover letter.
                   </label>
                 </div>
                 <div>
                   <label>
-                          Type title of position:
-                    <input type="text" placeholder="Title of Position" value={this.state.job} onChange={this.updateCoverLetterJob} />
+                          <input type="text" placeholder="Title of Position" value={this.state.job} onChange={this.updateCoverLetterJob} />
+                          -Type the title of the position to update the cover letter.
                   </label>
                   </div>
               </form>
               
               <hr />
                   <p>
-                    Eric O'Brien<br />
-                    ejobrien315@gmail.com<br />
+                    <a href="https://www.linkedin.com/in/ericobrien315/" target="_blank" >Eric O'Brien</a><br />
+                    <a href="mailto:ejobrien315@gmail.com" target="_blank" >ejobrien315@gmail.com</a><br />
                     <a href="https://github.com/cireneirbo" target="_blank" >https://github.com/cireneirbo</a>
                   </p>
               
