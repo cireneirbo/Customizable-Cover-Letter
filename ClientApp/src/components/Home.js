@@ -19,14 +19,17 @@ export class Home extends Component {
 
     updateCoverLetterCompany(event) {
         this.setState({ company: event.target.company });
+        event.preventDefault();
     }
 
     updateCoverLetterJob(event) {
         this.setState({ job: event.target.job });
+        event.preventDefault();
     }
 
     submitCoverLetter(event) {
         this.setState({ company: event.target.company });
+        event.preventDefault();
     }
 
   render () {
