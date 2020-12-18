@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -71,11 +70,4 @@ export class Home extends Component {
           </div>
     );
     }
-
-    //PropTypes
-    /*Home.PropTypes = {
-        value: PropTypes.string,
-        toggleComplete: PropTypes.func.isRequired,
-        deleteTodo: PropTypes.func.isRequired
-    }*/
 }
